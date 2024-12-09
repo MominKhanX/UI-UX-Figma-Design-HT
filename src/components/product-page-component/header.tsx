@@ -164,9 +164,13 @@ const Navbar = () => {
 
             <FiSearch className="text-lg cursor-pointer" />
 
-            <FiShoppingCart className="text-lg cursor-pointer" />
-
-            <FiHeart className="text-lg cursor-pointer" />
+            <Link href="#">
+              <FiShoppingCart className="text-lg cursor-pointer" />
+            </Link>
+            
+            <Link href="/product-details">
+              <FiHeart className="text-lg cursor-pointer" />
+            </Link>
 
           </div>
 

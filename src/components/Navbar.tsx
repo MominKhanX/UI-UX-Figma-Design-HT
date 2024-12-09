@@ -42,7 +42,7 @@ const Navbar = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaInstagram className="w-[16px] h-[16px]"/>
+              <FaInstagram className="w-[16px] h-[16px]" />
             </Link>
 
             <Link
@@ -50,7 +50,7 @@ const Navbar = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaYoutube className="w-[16px] h-[16px]"/>
+              <FaYoutube className="w-[16px] h-[16px]" />
             </Link>
 
             <Link
@@ -58,7 +58,7 @@ const Navbar = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaFacebook className="w-[16px] h-[16px]"/>
+              <FaFacebook className="w-[16px] h-[16px]" />
             </Link>
 
             <Link
@@ -66,13 +66,13 @@ const Navbar = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaTwitter className="w-[16px] h-[16px]"/>
+              <FaTwitter className="w-[16px] h-[16px]" />
             </Link>
 
           </div>
 
         </div>
-        
+
       </div>
 
 
@@ -158,13 +158,17 @@ const Navbar = () => {
 
           <div className="hidden md:flex items-center gap-6 text-[#23A6F0]">
 
-            <button className="text-sm font-medium"><FaRegUser className="text-[14px] leading-[24px] inline-flex"/>Login/Register</button>
+            <button className="text-sm font-medium"><FaRegUser className="text-[14px] leading-[24px] inline-flex" />Login/Register</button>
 
             <FiSearch className="text-lg cursor-pointer" />
 
-            <FiShoppingCart className="text-lg cursor-pointer" />
-
-            <FiHeart className="text-lg cursor-pointer" />
+            <Link href="#">
+              <FiShoppingCart className="text-lg cursor-pointer" />
+            </Link>
+            
+            <Link href="/product-details">
+              <FiHeart className="text-lg cursor-pointer" />
+            </Link>
 
           </div>
 
