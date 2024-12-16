@@ -11,18 +11,17 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-white shadow-md py-4">
+    <header className="bg-white py-4">
 
       <div className="container mx-auto flex items-center justify-between px-4">
 
-        <div className="text-[24px] font-bold text-[#252B42] mr-8">
+        <div className="text-[24px] font-bold text-[#252B42] lg:ml-[130px] ml-2 mr-8">
           Bandage
         </div>
 
         <nav className="hidden md:flex flex-row items-center gap-8 text-[14px] text-[#737373] font-bold ml-20">
 
           <ul className="list-none flex gap-8">
-            
             {" "}
 
             <Link href="/">
@@ -71,8 +70,8 @@ const Header = () => {
           </button>
 
 
-          <button className="hidden md:flex items-center gap-2 px-4 py-3 bg-[#23A6F0] text-[#FAFAFA] rounded-md hover:bg-[#195f88] transition duration-300">
-            Become a member
+          <button className="hidden md:flex items-center mr-32 gap-2 px-4 py-3 bg-[#23A6F0] text-[#FAFAFA] rounded-md hover:bg-[#195f88] transition duration-300">
+            <span className="font-bold text-[14px] leading-[22px]">Become a member</span>
             <FiArrowRight className="text-lg" />
           </button>
 
@@ -101,7 +100,7 @@ const Header = () => {
             </li>
           </Link>
 
-          <Link href="/product">
+          <Link href="/product-list">
             <li className="cursor-pointer hover:text-[#23A6F0] transition-all">
               Product
             </li>

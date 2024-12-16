@@ -6,12 +6,12 @@ import React from 'react'
 
 const ShopPage = () => {
   return (
-    <>
-    <Header />
-    <Hero />
-    <TeamSection />
-    <Footer />
-    </>
+    <div>
+      <Header />
+      <Hero />
+      <TeamSection />
+      <Footer />
+    </div>
   )
 }
 

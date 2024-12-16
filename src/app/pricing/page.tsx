@@ -9,14 +9,14 @@ import React from 'react'
 const PricingPage = () => {
   return (
     <div>
-        <Header />
-        <Price />
-        <Plan />
-        <PriceFaqs />
-        <FreeTrail />
-        <Footer />
+      <Header />
+      <Price />
+      <Plan />
+      <PriceFaqs />
+      <FreeTrail />
+      <Footer />
     </div>
   )
 }
 
-export default PricingPage
+export default PricingPage;

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export interface Product {
   image: string;
@@ -16,6 +17,9 @@ interface ProductCardProps {
 const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   return (
     <div className="flex flex-col items-center p-4 mt-6">
+
+      <Link href="product-details">
+
       <div>
         <Image
           src={product.image}
@@ -26,8 +30,11 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
       </div>
 
       <div className="mt-4 text-center">
+
         <h5 className="text-[#252B42] leading-[24px] text-[16px] font-bold">{product.name}</h5>
+
         <p className="text-[#737373] font-bold leading-[24px] text-[14px]">{product.department}</p>
+
         <h5 className="text-[#BDBDBD] text-[16px] font-bold leading-[24px] mt-2">
           {product.originalPrice}{" "}
           <span className="text-[#23856D]">{product.discountedPrice}</span>
@@ -38,8 +45,11 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
             <div key={index} className={`w-4 h-4 ${color} rounded-full`} />
           ))}
         </div>
-        
+
       </div>
+
+      </Link>
+
     </div>
   );
 };

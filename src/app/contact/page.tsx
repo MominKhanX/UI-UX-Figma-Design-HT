@@ -6,12 +6,12 @@ import React from 'react'
 
 const ContactPage = () => {
   return (
-    <>
-        <Header />
-        <ContactUs />
-        <Office />
-        <Footer />
-    </>
+    <div>
+      <Header />
+      <ContactUs />
+      <Office />
+      <Footer />
+    </div>
   )
 }
 

@@ -1,5 +1,5 @@
 import React from "react";
-import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -14,11 +14,11 @@ interface TeamMember {
   image: string;
 }
 
-const MeetTeam: React.FC = () => {
+const OurTeam: React.FC = () => {
   const teamMembers: TeamMember[] = [
     {
-      name: "John Doe",
-      profession: "Designer",
+      name: "Username",
+      profession: "Profession",
       social: {
         facebook: "#",
         instagram: "#",
@@ -27,8 +27,8 @@ const MeetTeam: React.FC = () => {
       image: "/team-member3.png",
     },
     {
-      name: "Jane Smith",
-      profession: "Developer",
+      name: "Username",
+      profession: "Profession",
       social: {
         facebook: "#",
         instagram: "#",
@@ -37,8 +37,8 @@ const MeetTeam: React.FC = () => {
       image: "/team-member4.png",
     },
     {
-      name: "Sam Wilson",
-      profession: "Project Manager",
+      name: "Username",
+      profession: "Profession",
       social: {
         facebook: "#",
         instagram: "#",
@@ -51,11 +51,16 @@ const MeetTeam: React.FC = () => {
   return (
     <section className="py-16 bg-white">
 
-      <h2 className="text-center text-[40px] font-bold mb-20 text-[#252B42]">
+      <h2 className="text-center leading-[50px] text-[40px] font-bold mb-20 text-[#252B42] md:mt-[160px]">
         Meet Our Team
       </h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-2 px-4">
+      <p className="text-center text-[#737373] font-medium text-[14px] leading-[20px] mb-[50px] lg:mb-[120px] mt-[-70px]">
+        Problems trying to resolve the conflict between <br />
+        the two major realms of Classical physics: Newtonian mechanics
+      </p>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 px-4 sm:px-8 md:px-16 lg:px-[220px]">
 
         {teamMembers.map((member, index) => (
           <div key={index} className="text-center">
@@ -68,26 +73,26 @@ const MeetTeam: React.FC = () => {
               className="mx-auto"
             />
 
-            <h3 className="mt-6 text-[16px] font-bold text-[#252B42]">
+            <h5 className="text-[#252B42] mt-6 text-[16px] leading-[24px] font-bold">
               {member.name}
-            </h3>
+            </h5>
 
-            <p className="text-[#737373] text-[14px] mt-3">
+            <h6 className="text-[#737373] font-bold text-[14px] leading-[24px] mt-3">
               {member.profession}
-            </p>
+            </h6>
 
             <div className="flex justify-center mt-3 space-x-4">
 
-              <Link href={member.social.facebook} className="text-[#23A6F0]">
-                <FaFacebookF size={25} />
+              <Link href="#" aria-label="Facebook" className="text-[#23A6F0] hover:text-[#0f5c89]">
+                <FaFacebook className="w-6 h-6" />
               </Link>
 
-              <Link href={member.social.instagram} className="text-[#23A6F0]">
-                <FaInstagram size={25} />
+              <Link href="#" aria-label="Instagram" className="text-[#23A6F0] hover:text-[#0f5c89]">
+                <FaInstagram className="w-6 h-6" />
               </Link>
 
-              <Link href={member.social.twitter} className="text-[#23A6F0]">
-                <FaTwitter size={25} />
+              <Link href="#" aria-label="Twitter" className="text-[#23A6F0] hover:text-[#0f5c89]">
+                <FaTwitter className="w-6 h-6" />
               </Link>
 
             </div>
@@ -99,4 +104,4 @@ const MeetTeam: React.FC = () => {
   );
 };
 
-export default MeetTeam;
+export default OurTeam;

@@ -4,11 +4,12 @@ import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="py-6 bg-white">
+    <footer className="mt-10 bg-white">
 
-      <div className="flex justify-between items-center py-12 px-10 mx-auto max-w-screen-xl bg-[#FAFAFA]">
+      <div className="flex justify-between items-center py-12 px-10 mx-auto w-screen bg-[#FAFAFA]">
 
-        <h2 className="text-[24px] font-bold text-[#252B42]">Bandage</h2>
+        <h2 className="text-[24px] font-bold text-[#252B42] lg:mr-0 mr-6">Bandage</h2>
+
 
         <div className="flex space-x-6">
 
@@ -33,17 +34,16 @@ const Footer = () => {
         <div className="flex flex-col lg:flex-row items-start justify-between gap-6">
 
           <div className="flex-1 min-w-[120px]">
+            
+            <h3 className="text-lg font-bold text-[#252B42] text-[16px] mb-3">Company Info</h3>
 
-            <h3 className="text-lg font-bold text-[#252B42] text-[16px] mb-2">Company Info</h3>
-
-            <ul className="text-[#737373] space-y-1 text-[14px] font-bold">
-
+            <ul className="text-[#737373] space-y-5 text-[14px] font-bold">
               <li>
                 <Link href="#" className="hover:underline">
                   About Us
                 </Link>
               </li>
-
+              
               <li>
                 <Link href="#" className="hover:underline">
                   Carrier
@@ -61,6 +61,40 @@ const Footer = () => {
                   Blog
                 </Link>
               </li>
+            </ul>
+
+          </div>
+
+
+          <div className="flex-1 min-w-[120px]">
+
+            <h3 className="text-lg font-bold text-[#252B42] text-[16px] mb-3">Legal</h3>
+
+            <ul className="text-[#737373] space-y-5 text-[14px] font-bold">
+
+              <li>
+                <Link href="#" className="hover:underline">
+                  About Us
+                </Link>
+              </li>
+
+              <li>
+                <Link href="#" className="hover:underline">
+                  Carrier
+                </Link>
+              </li>
+
+              <li>
+                <Link href="#" className="hover:underline">
+                  We Are Hiring
+                </Link>
+              </li>
+
+              <li>
+                <Link href="/blog" className="hover:underline">
+                  Blog
+                </Link>
+              </li>
 
             </ul>
 
@@ -69,43 +103,9 @@ const Footer = () => {
 
           <div className="flex-1 min-w-[120px]">
 
-            <h3 className="text-lg font-bold text-[#252B42] text-[16px] mb-2">Legal</h3>
+            <h3 className="text-lg font-bold text-[#252B42] text-[16px] mb-3">Features</h3>
 
-            <ul className="text-[#737373] space-y-1 text-[14px] font-bold">
-
-              <li>
-                <Link href="#" className="hover:underline">
-                  Terms of Service
-                </Link>
-              </li>
-
-              <li>
-                <Link href="#" className="hover:underline">
-                  Privacy Policy
-                </Link>
-              </li>
-
-              <li>
-                <Link href="#" className="hover:underline">
-                  Cookie Policy
-                </Link>
-              </li>
-
-              <li>
-                <Link href="#" className="hover:underline">
-                  Compliance
-                </Link>
-              </li>
-
-            </ul>
-
-          </div>
-
-          <div className="flex-1 min-w-[120px]">
-
-            <h3 className="text-lg font-bold text-[#252B42] text-[16px] mb-2">Features</h3>
-
-            <ul className="text-[#737373] space-y-1 text-[14px] font-bold">
+            <ul className="text-[#737373] space-y-5 text-[14px] font-bold">
 
               <li>
                 <Link href="#" className="hover:underline">
@@ -138,9 +138,9 @@ const Footer = () => {
 
           <div className="flex-1 min-w-[120px]">
 
-            <h3 className="text-lg font-bold text-[#252B42] text-[16px] mb-2">Resources</h3>
+            <h3 className="text-lg font-bold text-[#252B42] text-[16px] mb-3">Resources</h3>
 
-            <ul className="text-[#737373] space-y-1 text-[14px] font-bold">
+            <ul className="text-[#737373] space-y-5 text-[14px] font-bold">
 
               <li>
                 <Link href="#" className="hover:underline">
@@ -173,7 +173,7 @@ const Footer = () => {
 
           <div className="flex-1 min-w-[150px]">
 
-            <h3 className="text-lg font-bold text-[#252B42] text-[16px] mb-2">Get In Touch</h3>
+            <h3 className="text-lg font-bold text-[#252B42] text-[16px] mb-3">Get In Touch</h3>
 
             <div>
 
@@ -182,26 +182,29 @@ const Footer = () => {
                 <input
                   type="email"
                   placeholder="Your Email"
-                  className="px-3 py-2 border rounded-l-md text-[14px] w-full focus:outline-none"
+                  className="px-3 py-2 border rounded-l-md text-[14px] w-full focus:outline-none bg-[#FAFAFA]"
                 />
-                <button className="bg-[#23A6F0] text-white px-4 py-2 rounded-r-md hover:bg-[#0f5c89] text-[14px]">
+
+                <button className="bg-[#23A6F0] text-white px-4 py-3 text-[14px] leading-[28px] font-normal rounded-r-md hover:bg-[#0f5c89] transition duration-300">
                   Subscribe
                 </button>
 
               </div>
 
               <p className="text-[#737373] text-[12px] mt-2">Lore imp sum dolor Amit</p>
+              
             </div>
-            
+
           </div>
 
         </div>
 
+      </div>
 
-        <div className="mt-16 text-left bg-[#FAFAFA] py-9">
-          <p className="text-[#737373] font-bold text-[14px]">Made With Love By Finland. All Rights Reserved.</p>
-        </div>
-
+      <div className="mt-16 bg-[#FAFAFA] h-[74px] w-screen flex items-center">
+        <p className="text-[#737373] font-bold text-[14px] text-left ml-10">
+          Made With Love By Finland. All Rights Reserved
+        </p>
       </div>
 
     </footer>

@@ -81,7 +81,7 @@ const Navbar = () => {
 
         <div className="container mx-auto flex items-center justify-between py-4">
 
-          <div className="text-[24px] font-bold leading-[32px] text-[#252B42]">Bandage</div>
+          <div className="text-[24px] font-bold leading-[32px] text-[#252B42] ml-6">Bandage</div>
 
           <div className="flex items-center gap-4 md:hidden">
 
@@ -114,20 +114,14 @@ const Navbar = () => {
               </li>
 
               <li className="relative group">
-                <Link
-                  href="/product-list"
-                  className="flex items-center gap-1 font-medium text-[14px] leading-[28px] text-[#252B42] hover:text-black"
-                >
+                <Link href="/product-list" className="flex items-center gap-1 font-medium text-[14px] leading-[28px] text-[#252B42] hover:text-black">
                   Shop
                   <FiChevronDown />
                 </Link>
               </li>
 
               <li>
-                <Link
-                  href="/about"
-                  className="font-bold text-[14px] leading-[24px] text-[#737373] hover:text-black"
-                >
+                <Link href="/about" className="font-bold text-[14px] leading-[24px] text-[#737373] hover:text-black">
                   About
                 </Link>
               </li>
@@ -139,10 +133,7 @@ const Navbar = () => {
               </li>
 
               <li>
-                <Link
-                  href="/contact"
-                  className="font-bold text-[14px] leading-[24px] text-[#737373] hover:text-black"
-                >
+                <Link href="/contact" className="font-bold text-[14px] leading-[24px] text-[#737373] hover:text-black">
                   Contact
                 </Link>
               </li>
@@ -158,16 +149,16 @@ const Navbar = () => {
           </nav>
 
 
-          <div className="hidden md:flex items-center gap-6 text-[#23A6F0]">
+          <div className="hidden md:flex items-center gap-6 text-[#23A6F0] mr-28">
 
-            <button className="text-sm font-medium"><FaRegUser className="text-[14px] leading-[24px] inline-flex" />Login/Register</button>
+            <button className="text-sm font-medium"><FaRegUser className="text-[14px] leading-[24px] inline-flex mr-1" />Login/Register</button>
 
             <FiSearch className="text-lg cursor-pointer" />
 
             <Link href="#">
               <FiShoppingCart className="text-lg cursor-pointer" />
             </Link>
-            
+
             <Link href="/product-details">
               <FiHeart className="text-lg cursor-pointer" />
             </Link>
@@ -190,26 +181,32 @@ const Navbar = () => {
             </li>
 
             <li>
-              <Link href="/product" className="hover:text-[#23A6F0] transition-all">
-                Product
+              <Link href="/product-list" className="hover:text-[#23A6F0] transition-all">
+                Shop
               </Link>
             </li>
 
             <li>
-              <Link
-                href="/about"
-                className="hover:text-[#23A6F0] transition-all"
-              >
-                Pricing
+              <Link href="/about" className="hover:text-[#23A6F0] transition-all">
+                About
               </Link>
             </li>
 
             <li>
-              <Link
-                href="/contact"
-                className="hover:text-[#23A6F0] transition-all"
-              >
+              <Link href="/blog" className="hover:text-[#23A6F0] transition-all">
+                Blog
+              </Link>
+            </li>
+
+            <li>
+              <Link href="/contact" className="hover:text-[#23A6F0] transition-all">
                 Contact
+              </Link>
+            </li>
+
+            <li>
+              <Link href="/pages" className="hover:text-[#23A6F0] transition-all">
+                Pages
               </Link>
             </li>
 

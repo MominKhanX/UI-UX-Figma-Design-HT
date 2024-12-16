@@ -34,12 +34,12 @@ const PriceFaqs = () => {
 
       <div className="text-center mb-8">
 
-        <h2 className="text-[#252B42] font-bold text-[40px]">Pricing FAQs</h2>
+        <h2 className="text-[#252B42] font-bold text-[40px] leading-[50px]">Pricing FAQs</h2>
 
-        <p className="text-[#737373] font-normal text-[20px] leading-[30px] mt-4">
+        <h4 className="text-[#737373] font-normal text-[20px] leading-[30px] mt-4">
           Problems trying to resolve the conflict between <br />
           the two major realms of Classical physics
-        </p>
+        </h4>
 
       </div>
 
@@ -54,20 +54,25 @@ const PriceFaqs = () => {
 
               <FiChevronRight className="text-[#23A6F0] text-[25px]" />
 
-              <h3 className="text-[#252B42] font-bold text-[16px]">
+              <h5 className="text-[#252B42] font-bold text-[16px] leading-[24px]">
                 {faq.question}
-              </h3>
+              </h5>
 
             </div>
-            
-            <p className="text-[#737373] text-[14px] mt-2">{faq.answer}</p>
+
+            <p className="text-[#737373] font-normal text-[14px] leading-[20px] mt-2">
+              {faq.answer}
+            </p>
 
           </div>
         ))}
 
       </div>
-      
-      <p className="text-[#737373] text-[20px] flex justify-center mt-16">Haven&apos;t got your answer? Contact our support</p>
+
+      <p className="text-[#737373] font-medium text-[20px] leading-[30px] flex justify-center mt-16">
+        Haven&apos;t got your answer? Contact our support
+      </p>
+
     </div>
   );
 };

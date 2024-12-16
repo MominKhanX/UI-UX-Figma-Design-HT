@@ -74,13 +74,17 @@ const FeatureProducts: React.FC = () => {
     <div className="flex flex-col items-center justify-center text-center mt-28 mb-7 overflow-x-hidden">
 
       <div>
+
         <h4 className="text-[#737373] font-normal leading-[30px] text-[20px]">Featured Products</h4>
+
         <h2 className="text-[#252B42] text-[24px] font-bold leading-[32px] mt-2">
           BESTSELLER PRODUCTS
         </h2>
+
         <p className="text-[#737373] font-normal text-[14px] leading-[20px] mt-2">
           Problems trying to resolve the conflict between
         </p>
+
       </div>
 
 
@@ -95,6 +99,7 @@ const FeatureProducts: React.FC = () => {
         <div className="text-white space-y-4 ml-4 sm:ml-12 md:ml-36 text-center sm:text-left">
 
           <h4 className="text-[20px] font-normal leading-[30px]">SUMMER 2020</h4>
+
           <h1 className="text-[40px] leading-[80px] sm:text-[50px] md:text-[58px] font-bold">
             Vita Classic <br /> <span>Product</span>
           </h1>
@@ -106,11 +111,13 @@ const FeatureProducts: React.FC = () => {
 
 
           <div className="flex flex-col sm:flex-row items-center gap-4 mt-4 sm:mt-8 pb-7">
+
             <h3 className="text-[24px] font-bold leading-[32px]">$16.48</h3>
 
             <button className="text-[14px] font-bold bg-[#2DC071] py-4 px-10 rounded-md hover:bg-green-600 mt-4 sm:mt-0">
               ADD TO CART
             </button>
+
           </div>
 
         </div>
@@ -165,7 +172,9 @@ const FeatureProducts: React.FC = () => {
           </div>
 
         </div>
+
       </div>
+
     </div>
   );
 };

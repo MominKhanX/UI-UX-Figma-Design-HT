@@ -1,7 +1,7 @@
 import { Product } from "../../../interface";
 import ProductCard from "@/components/product-card";
 
-const Cards: React.FC = () => {
+const Cards = () => {
 
   const products: Product[] = [
     {
@@ -10,63 +10,95 @@ const Cards: React.FC = () => {
       department: "English Department",
       originalPrice: "$16.48",
       discountedPrice: "$6.48",
-      colors: ["bg-[#23A6F0]", "bg-[#23856D]", "bg-[#E77C40]", "bg-[#252B42]"],
+      colors: ["bg-[#23A6F0]", "bg-[#23856D]", "bg-[#E77C40]", "bg-[#23856D]"],
     },
     {
       image: "/card2.png",
-      name: "Web Design",
-      department: "Marketing Department",
+      name: "Graphic Design",
+      department: "English Department",
       originalPrice: "$16.48",
       discountedPrice: "$6.48",
-      colors: ["bg-[#23A6F0]", "bg-[#23856D]", "bg-[#E77C40]", "bg-[#252B42]"],
+      colors: ["bg-[#23A6F0]", "bg-[#23856D]", "bg-[#E77C40]", "bg-[#23856D]"],
     },
     {
       image: "/card3.png",
-      name: "Logo Design",
-      department: "Branding Department",
+      name: "Graphic Design",
+      department: "English Department",
       originalPrice: "$16.48",
       discountedPrice: "$6.48",
-      colors: ["bg-[#23A6F0]", "bg-[#23856D]", "bg-[#E77C40]", "bg-[#252B42]"],
+      colors: ["bg-[#23A6F0]", "bg-[#23856D]", "bg-[#E77C40]", "bg-[#23856D]"],
     },
     {
       image: "/card4.png",
-      name: "UI/UX Design",
-      department: "Product Department",
+      name: "Graphic Design",
+      department: "English Department",
       originalPrice: "$16.48",
       discountedPrice: "$6.48",
-      colors: ["bg-[#23A6F0]", "bg-[#23856D]", "bg-[#E77C40]", "bg-[#252B42]"],
+      colors: ["bg-[#23A6F0]", "bg-[#23856D]", "bg-[#E77C40]", "bg-[#23856D]"],
     },
     {
       image: "/card5.png",
-      name: "Branding Design",
-      department: "Creative Department",
+      name: "Graphic Design",
+      department: "English Department",
       originalPrice: "$16.48",
       discountedPrice: "$6.48",
-      colors: ["bg-[#23A6F0]", "bg-[#23856D]", "bg-[#E77C40]", "bg-[#252B42]"],
+      colors: ["bg-[#23A6F0]", "bg-[#23856D]", "bg-[#E77C40]", "bg-[#23856D]"],
     },
     {
       image: "/card6.png",
-      name: "App Design",
-      department: "Tech Department",
+      name: "Graphic Design",
+      department: "English Department",
       originalPrice: "$16.48",
       discountedPrice: "$6.48",
-      colors: ["bg-[#23A6F0]", "bg-[#23856D]", "bg-[#E77C40]", "bg-[#252B42]"],
+      colors: ["bg-[#23A6F0]", "bg-[#23856D]", "bg-[#E77C40]", "bg-[#23856D]"],
     },
     {
       image: "/card7.png",
-      name: "Product Strategy",
-      department: "Sales Department",
+      name: "Graphic Design",
+      department: "English Department",
       originalPrice: "$16.48",
       discountedPrice: "$6.48",
-      colors: ["bg-[#23A6F0]", "bg-[#23856D]", "bg-[#E77C40]", "bg-[#252B42]"],
+      colors: ["bg-[#23A6F0]", "bg-[#23856D]", "bg-[#E77C40]", "bg-[#23856D]"],
     },
     {
       image: "/card8.png",
-      name: "Marketing Strategy",
-      department: "Sales Department",
+      name: "Graphic Design",
+      department: "English Department",
       originalPrice: "$16.48",
       discountedPrice: "$6.48",
-      colors: ["bg-[#23A6F0]", "bg-[#23856D]", "bg-[#E77C40]", "bg-[#252B42]"],
+      colors: ["bg-[#23A6F0]", "bg-[#23856D]", "bg-[#E77C40]", "bg-[#23856D]"],
+    },
+    {
+      image: "/card9.png",
+      name: "Graphic Design",
+      department: "English Department",
+      originalPrice: "$16.48",
+      discountedPrice: "$6.48",
+      colors: ["bg-[#23A6F0]", "bg-[#23856D]", "bg-[#E77C40]", "bg-[#23856D]"],
+    },
+    {
+      image: "/card10.png",
+      name: "Graphic Design",
+      department: "English Department",
+      originalPrice: "$16.48",
+      discountedPrice: "$6.48",
+      colors: ["bg-[#23A6F0]", "bg-[#23856D]", "bg-[#E77C40]", "bg-[#23856D]"],
+    },
+    {
+      image: "/card11.png",
+      name: "Graphic Design",
+      department: "English Department",
+      originalPrice: "$16.48",
+      discountedPrice: "$6.48",
+      colors: ["bg-[#23A6F0]", "bg-[#23856D]", "bg-[#E77C40]", "bg-[#23856D]"],
+    },
+    {
+      image: "/card12.png",
+      name: "Graphic Design",
+      department: "English Department",
+      originalPrice: "$16.48",
+      discountedPrice: "$6.48",
+      colors: ["bg-[#23A6F0]", "bg-[#23856D]", "bg-[#E77C40]", "bg-[#23856D]"],
     }
   ];
 
@@ -89,7 +121,7 @@ const Cards: React.FC = () => {
 
 
         <div className="flex space-x-2 mt-4 sm:mt-0">
-          
+
           <button className="px-4 py-2 font-bold rounded-md text-[#23A6F0] hover:bg-[#23A6F0] hover:text-white text-sm sm:px-8 sm:py-6">
             1
           </button>

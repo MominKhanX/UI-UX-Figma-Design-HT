@@ -11,9 +11,9 @@ const Plan = () => {
 
       <div className="text-center mt-14">
 
-        <h3 className="text-[#252B42] font-bold text-[40px]">Pricing</h3>
+        <h2 className="text-[#252B42] font-bold text-[40px] leading-[50px]">Pricing</h2>
 
-        <p className="text-[#737373] text-[14px] mt-4">
+        <p className="text-[#737373] text-[14px] font-medium leading-[20px] mt-4">
           Problems trying to resolve the conflict between <br />
           the two major realms of Classical physics: Newtonian mechanics
         </p>
@@ -23,7 +23,7 @@ const Plan = () => {
 
       <div className="flex items-center justify-center mt-10 gap-4">
 
-        <h3 className="text-[#252B42] font-bold text-[16px]">Monthly</h3>
+        <h5 className="text-[#252B42] font-bold text-[16px] leading-[24px]">Monthly</h5>
 
         <div
           className={`w-14 h-7 flex items-center rounded-full p-1 cursor-pointer border border-[#23A6F0]`}
@@ -31,9 +31,8 @@ const Plan = () => {
         >
 
           <div
-            className={`w-5 h-5 rounded-full shadow-md transform transition-transform ${
-              isMonthly ? "translate-x-7 bg-[#2DC071]" : "bg-[#D0D0D0]"
-            }`}
+            className={`w-5 h-5 rounded-full shadow-md transform transition-transform ${isMonthly ? "translate-x-7 bg-[#2DC071]" : "bg-[#D0D0D0]"
+              }`}
           >
           </div>
 
@@ -41,10 +40,10 @@ const Plan = () => {
 
         <div className="flex items-center gap-2">
 
-          <h3 className="text-[#252B42] font-bold text-[16px]">Yearly</h3>
+          <h5 className="text-[#252B42] font-bold text-[16px] leading-[24px]">Yearly</h5>
 
-          <div className="bg-[#B2E3FF] text-[#23A6F0] text-[14px] font-bold px-4 py-3 rounded-full">
-            Save 25%
+          <div className="bg-[#B2E3FF] px-[20px] py-[10px] rounded-[37px]">
+            <h6 className="text-[#23A6F0] text-[14px] font-bold leading-[24px]">Save 25%</h6>
           </div>
 
         </div>
@@ -58,21 +57,20 @@ const Plan = () => {
 
           <div>
 
-            <h3 className="font-bold text-[#252B42] text-[24px] text-center">
+            <h3 className="font-bold text-[#252B42] text-[24px] leading-[32px] text-center">
               FREE
             </h3>
 
-            <p className="font-bold text-[#737373] text-[16px] text-center mt-3">
-              Ideal for individuals or small teams who are just starting out.
-            </p>
+            <h5 className="font-bold text-[#737373] text-[16px] leading-[24px] text-center mt-3">
+              Organize across all <br />
+              apps by hand
+            </h5>
 
-            <p className="text-[#23A6F0] font-bold text-[40px] text-center mt-5">
-
+            <p className="text-[#23A6F0] font-bold text-[40px] leading-[50px] text-center mt-5">
               0
+              <span className="text-[#23A6F0] font-bold text-[24px] leading-[32px]">$</span>
 
-              <span className="text-[#23A6F0] font-bold text-[24px]">$</span>
-
-              <span className="text-[#8EC2F2] font-bold text-[14px]">
+              <span className="text-[#8EC2F2] font-bold text-[14px] leading-[24px]">
                 Per Month
               </span>
 
@@ -88,7 +86,7 @@ const Plan = () => {
                 <FiCheck className="text-white text-[14px]" />
               </div>
 
-              <span className="text-[#252B42] font-bold text-[14px]">
+              <span className="text-[#252B42] font-bold text-[14px] leading-[24px]">
                 Unlimited product updates
               </span>
 
@@ -100,7 +98,7 @@ const Plan = () => {
                 <FiCheck className="text-white text-[14px]" />
               </div>
 
-              <span className="text-[#252B42] font-bold text-[14px]">
+              <span className="text-[#252B42] font-bold text-[14px] leading-[24px]">
                 Unlimited product updates
               </span>
 
@@ -112,7 +110,7 @@ const Plan = () => {
                 <FiCheck className="text-white text-[14px]" />
               </div>
 
-              <span className="text-[#252B42] font-bold text-[14px]">
+              <span className="text-[#252B42] font-bold text-[14px] leading-[24px]">
                 Unlimited product updates
               </span>
 
@@ -124,52 +122,53 @@ const Plan = () => {
                 <FiCheck className="text-white text-[14px]" />
               </div>
 
-              <span className="text-[#252B42] font-bold text-[14px]">
-              Unlimited product updates
+              <span className="text-[#252B42] font-bold text-[14px] leading-[24px]">
+                1GB Cloud Storage
               </span>
 
             </li>
 
             <li className="flex items-center gap-3">
-              
+
               <div className="w-[32px] h-[32px] bg-[#BDBDBD] rounded-full flex justify-center items-center">
                 <FiCheck className="text-white text-[14px]" />
               </div>
 
-              <span className="text-[#252B42] font-bold text-[14px]">
-              Unlimited product updates
+              <span className="text-[#252B42] font-bold text-[14px] leading-[24px]">
+                Email and community <br /> support
               </span>
 
             </li>
 
           </ul>
 
-          <button className="bg-[#252B42] text-[#FFFFFF] font-bold text-[14px] px-8 py-4 flex justify-center items-center rounded-md mx-auto hover:bg-gray-800">
-            Try for free
+          <button className="bg-[#252B42] px-[70px] py-[15px] flex justify-center items-center rounded-md mx-auto hover:bg-[#2f3653]">
+            <span className="text-[#FFFFFF] font-bold text-[14px] leading-[22px]">Try for free</span>
           </button>
 
         </div>
 
 
-        <div className="border-2 border-[#23A6F0] rounded-lg p-6 bg-[#252B42] shadow-md h-[700px] flex flex-col justify-between">
+        <div className="border-2 border-[#23A6F0] rounded-lg p-6 md:mt-[-40px] bg-[#252B42] shadow-md h-[700px] flex flex-col justify-between">
 
           <div>
 
-            <h3 className="font-bold text-[#FFFFFF] text-[24px] text-center">
-              Standard
+            <h3 className="font-bold text-[#FFFFFF] text-[24px] leading-[32px] text-center">
+              STANDARD
             </h3>
 
-            <p className="font-bold text-[#FFFFFF] text-[16px] text-center mt-3">
-              Perfect for small teams and businesses looking for more features.
-            </p>
+            <h5 className="font-bold text-white text-[16px] leading-[24px] text-center mt-3">
+              Organize across all <br />
+              apps by hand
+            </h5>
 
-            <p className="text-[#23A6F0] font-bold text-[40px] text-center mt-5">
+            <p className="text-[#23A6F0] font-bold text-[40px] leading-[50px] text-center mt-5">
               9.99
-              <span className="text-[#23A6F0] font-bold text-[24px]">
+              <span className="text-[#23A6F0] font-bold text-[24px] leading-[32px]">
                 $
               </span>
 
-              <span className="text-[#8EC2F2] font-bold text-[14px]">
+              <span className="text-[#8EC2F2] font-bold text-[14px] leading-[24px]">
                 Per Month
               </span>
 
@@ -185,7 +184,7 @@ const Plan = () => {
                 <FiCheck className="text-white text-[14px]" />
               </div>
 
-              <span className="text-[#FFFFFF] font-bold text-[14px]">
+              <span className="text-white font-bold text-[14px] leading-[24px]">
                 Unlimited product updates
               </span>
 
@@ -197,7 +196,7 @@ const Plan = () => {
                 <FiCheck className="text-white text-[14px]" />
               </div>
 
-              <span className="text-[#FFFFFF] font-bold text-[14px]">
+              <span className="text-white font-bold text-[14px] leading-[24px]">
                 Unlimited product updates
               </span>
 
@@ -209,20 +208,8 @@ const Plan = () => {
                 <FiCheck className="text-white text-[14px]" />
               </div>
 
-              <span className="text-[#FFFFFF] font-bold text-[14px]">
+              <span className="text-white font-bold text-[14px] leading-[24px]">
                 Unlimited product updates
-              </span>
-
-            </li>
-
-            <li className="flex items-center gap-3">
-
-              <div className="w-[32px] h-[32px] bg-[#2DC071] rounded-full flex justify-center items-center">
-                <FiCheck className="text-white text-[14px]" />
-              </div>
-
-              <span className="text-[#FFFFFF] font-bold text-[14px]">
-              Unlimited product updates
               </span>
 
             </li>
@@ -233,41 +220,54 @@ const Plan = () => {
                 <FiCheck className="text-white text-[14px]" />
               </div>
 
-              <span className="text-[#FFFFFF] font-bold text-[14px]">
-              Unlimited product updates
+              <span className="text-white font-bold text-[14px] leading-[24px]">
+                1GB Cloud Storage
+              </span>
+
+            </li>
+
+            <li className="flex items-center gap-3">
+
+              <div className="w-[32px] h-[32px] bg-[#BDBDBD] rounded-full flex justify-center items-center">
+                <FiCheck className="text-white text-[14px]" />
+              </div>
+
+              <span className="text-white font-bold text-[14px] leading-[24px]">
+                Email and community <br /> support
               </span>
 
             </li>
 
           </ul>
 
-          <button className="bg-[#23A6F0] text-[#FFFFFF] font-bold text-[14px] px-8 py-4 flex justify-center items-center rounded-md mx-auto hover:bg-blue-500">
-            Try for Standard
+          <button className="bg-[#23A6F0] px-[70px] py-[15px] flex justify-center items-center rounded-md mx-auto hover:bg-[#1b628b]">
+            <span className="text-[#FFFFFF] font-bold text-[14px] leading-[22px]">Try for free</span>
           </button>
-          
+
         </div>
 
-        {/* Premium Card */}
+
+
         <div className="border-2 border-[#23A6F0] rounded-lg p-6 bg-transparent shadow-md h-[664px] flex flex-col justify-between">
 
           <div>
 
-            <h3 className="font-bold text-[#252B42] text-[24px] text-center">
+            <h3 className="font-bold text-[#FFFFFF] text-[24px] leading-[32px]  text-center">
               PREMIUM
             </h3>
 
-            <p className="font-bold text-[#737373] text-[16px] text-center mt-3">
-              Perfect for growing businesses who need advanced features.
-            </p>
+            <h5 className="font-bold text-[#737373] text-[16px] leading-[24px] text-center mt-3">
+              Organize across all <br />
+              apps by hand
+            </h5>
 
-            <p className="text-[#23A6F0] font-bold text-[40px] text-center mt-5">
-
+            <p className="text-[#23A6F0] font-bold text-[40px] leading-[50px] text-center mt-5">
               29.99
-              <span className="text-[#23A6F0] font-bold text-[24px]">
+              <span className="text-[#23A6F0] font-bold text-[24px] leading-[32px]">
                 $
               </span>
 
-              <span className="text-[#8EC2F2] font-bold text-[14px]">
+              <span className="text-[#8EC2F2] font-bold text-[14px] leading-[24px]">
                 Per Month
               </span>
 
@@ -283,7 +283,7 @@ const Plan = () => {
                 <FiCheck className="text-white text-[14px]" />
               </div>
 
-              <span className="text-[#252B42] font-bold text-[14px]">
+              <span className="text-[#252B42] font-bold text-[14px] leading-[24px]">
                 Unlimited product updates
               </span>
 
@@ -295,7 +295,7 @@ const Plan = () => {
                 <FiCheck className="text-white text-[14px]" />
               </div>
 
-              <span className="text-[#252B42] font-bold text-[14px]">
+              <span className="text-[#252B42] font-bold text-[14px] leading-[24px]">
                 Unlimited product updates
               </span>
 
@@ -307,7 +307,7 @@ const Plan = () => {
                 <FiCheck className="text-white text-[14px]" />
               </div>
 
-              <span className="text-[#252B42] font-bold text-[14px]">
+              <span className="text-[#252B42] font-bold text-[14px] leading-[24px]">
                 Unlimited product updates
               </span>
 
@@ -315,32 +315,32 @@ const Plan = () => {
 
             <li className="flex items-center gap-3">
 
-              <div className="w-[32px] h-[32px] bg-[#2DC071] rounded-full flex justify-center items-center">
+              <div className="w-[32px] h-[32px] bg-[#BDBDBD] rounded-full flex justify-center items-center">
                 <FiCheck className="text-white text-[14px]" />
               </div>
 
-              <span className="text-[#252B42] font-bold text-[14px]">
-              Unlimited product updates
+              <span className="text-[#252B42] font-bold text-[14px] leading-[24px]">
+                1GB Cloud Storage
               </span>
 
             </li>
 
             <li className="flex items-center gap-3">
-              
-              <div className="w-[32px] h-[32px] bg-[#2DC071] rounded-full flex justify-center items-center">
+
+              <div className="w-[32px] h-[32px] bg-[#BDBDBD] rounded-full flex justify-center items-center">
                 <FiCheck className="text-white text-[14px]" />
               </div>
-              
-              <span className="text-[#252B42] font-bold text-[14px]">
-              Unlimited product updates
+
+              <span className="text-[#252B42] font-bold text-[14px] leading-[24px]">
+                Email and community <br /> support
               </span>
 
             </li>
 
           </ul>
 
-          <button className="bg-[#23A6F0] text-[#FFFFFF] font-bold text-[14px] px-8 py-4 flex justify-center items-center rounded-md mx-auto hover:bg-blue-500">
-            Try Premium
+          <button className="bg-[#252B42] px-[70px] py-[15px] flex justify-center items-center rounded-md mx-auto hover:bg-[#2f3653]">
+            <span className="text-[#FFFFFF] font-bold text-[14px] leading-[22px]">Try for free</span>
           </button>
 
         </div>
@@ -349,7 +349,7 @@ const Plan = () => {
 
       <div>
 
-        <h4 className="text-[#252B42] font-normal text-[20px] mt-24 text-center sm:text-[24px]">
+        <h4 className="text-[#252B42] font-normal text-[20px] leading-[30px] mt-28 text-center sm:text-[24px]">
           Trusted By Over 4000 Big Companies
         </h4>
 
